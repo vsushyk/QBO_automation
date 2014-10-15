@@ -1,4 +1,4 @@
-__author__ = 'volodymyr123'
+__author__ = 'volodymyr'
 
 # -*- coding: utf-8 -*-
 from selenium import webdriver
