@@ -1,4 +1,4 @@
-__author__ = 'nadia'
+__author__ = 'volodymyr'
 
 # -*- coding: utf-8 -*-
 import unittest
