@@ -11,6 +11,8 @@ import unittest, time, re
 from random import randint
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from Gmail.const import x
+
 
 class QBOCreateAccount(unittest.TestCase):
     def setUp(self):
@@ -28,7 +30,6 @@ class QBOCreateAccount(unittest.TestCase):
         driver.find_element_by_id("userLastName").clear()
         driver.find_element_by_id("userLastName").send_keys("Lastname")
         driver.find_element_by_id("userEmail").clear()
-        x = randint(1,100)
         print("x=" + str(x))
         driver.find_element_by_id("userEmail").send_keys("vlad.adds" + str(x) + "@gmail.com")
         driver.find_element_by_id("confirmUserEmail").clear()

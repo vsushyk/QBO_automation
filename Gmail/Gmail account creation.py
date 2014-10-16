@@ -3,12 +3,10 @@ __author__ = 'volodymyr'
 # -*- coding: utf-8 -*-
 import unittest
 import time
-
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
-
-from const import x
+from Gmail.const import x
 
 
 class GMailAccount(unittest.TestCase):

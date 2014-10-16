@@ -10,6 +10,7 @@ import unittest, time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+from Gmail.const import x
 
 
 class QBOAccountSetup(unittest.TestCase):
@@ -23,7 +24,7 @@ class QBOAccountSetup(unittest.TestCase):
     def test_q_b_o_account_setup(self):
         driver = self.driver
         driver.get(self.base_url + "/app/homepage")
-        x = 84 # remove this line when doing real setup
+
         ##### Logging in
         driver.find_element_by_id("login").send_keys("vlad.adds" + str(x) + "@gmail.com")
         driver.find_element_by_id("password").send_keys("revelup1")
